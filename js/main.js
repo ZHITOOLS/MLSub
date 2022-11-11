@@ -1,36 +1,35 @@
-function sub_to_mlsub() {
-        document.getElementById("id4").value = sub();
-        document.getElementById("id5").value = short();
-        Copy();
-    } //原始订阅转换
+function SubToMLSub() {
+    document.getElementById("id4").value = Sub();
+    document.getElementById("id5").value = Short();
+    Copy();
+} //原始订阅转换
 
-function sub() {
-    var url = document.getElementById("url").value;
-    var host = document.getElementById("host").value;
-    var name = document.getElementById("name").value;
-    var port = document.getElementById("port").value;
-    if (url === ""||host === ""||port === "") {
+function Sub() {
+    let url = document.getElementById("url").value;
+    let host = document.getElementById("host").value;
+    let name = document.getElementById("name").value;
+    let port = document.getElementById("port").value;
+    if (url === "" || host === "" || port === "") {
         alert("必填不能为空！");
-    }else{
-    var mlurl = window.location.href + "subscribe/&&" + url + "&&" + host + "&&";
-    if (!!document.getElementById("name").value) {
-        mlurl += name;
-    } //备注
-    mlurl += "&&" + port;//多端口筛选
-    return mlurl;
+    } else {
+        let mlUrl = window.location.href + "subscribe/&&" + url + "&&" + host + "&&";
+        if (!!document.getElementById("name").value) {
+            mlUrl += name;
+        } //备注
+        mlUrl += "&&" + port;//多端口筛选
+        return mlUrl;
     }
 }
 
-function short() {
-    var mlurl = document.getElementById("id4").value;
-    return mlurl;
+function Short() {
+    return document.getElementById("id4").value;
 }
 
 function Copy() {
-    var Url2 = document.getElementById("id4");
-    if (!Url2){
-        Url2.select(); // 选择对象
-        document.execCommand("Copy"); // 执行浏览器复制命令
+    let Url2 = document.getElementById("id4").value;
+    if (Url2) {
+        navigator.clipboard.writeText(Url2).then(() => {
+        }); // 执行浏览器复制命令
         alert("已复制好，可贴粘。");
     }
 }

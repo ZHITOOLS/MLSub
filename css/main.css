@@ -1,64 +1,76 @@
 body {
-	color:white;
+    color: white;
 }
+
 .bg {
-	z-index:-3;
-	width:100%;
-	height:100%;
-	position:fixed;
-	min-height:475px;
-	background-image:url(https://www.dmoe.cc/random.php);
-	background-repeat:no-repeat;
-	background-size:cover;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    min-height: 475px;
+    background-image: url(https://www.dmoe.cc/random.php);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.layui-border,.layui-quote-nm,.layui-elem-field,.layui-collapse,.layui-panel,.layui-colla-item,.layui-colla-content,.layui-badge-rim,.layui-tab-title,.layui-tab-title .layui-this:after,.layui-tab-bar,.layui-tab-card,.layui-input,.layui-textarea,.layui-select,.layui-form-pane .layui-form-label,.layui-form-pane .layui-form-item[pane],.layui-layedit,.layui-layedit-tool {
-	border-color:#cc114910;
+
+.layui-border, .layui-quote-nm, .layui-elem-field, .layui-collapse, .layui-panel, .layui-colla-item, .layui-colla-content, .layui-badge-rim, .layui-tab-title, .layui-tab-title .layui-this:after, .layui-tab-bar, .layui-tab-card, .layui-input, .layui-textarea, .layui-select, .layui-form-pane .layui-form-label, .layui-form-pane .layui-form-item[pane], .layui-layedit, .layui-layedit-tool {
+    border-color: #cc114910;
 }
+
 .layui-form-label.layui-required:after {
-	content:"*";
-	color:red;
-	position:absolute;
-	top:5px;
-	left:15px;
+    content: "*";
+    color: red;
+    position: absolute;
+    top: 5px;
+    left: 15px;
 }
+
 .layui-input {
-	background-color:rgba(0,0,0,0.2);
-	backdrop-filter:blur(5px);
-	color:#fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    color: #fff;
 }
+
 .layui-form-pane .layui-form-label {
-	background-color:rgba(0,0,0,0.2);
-	backdrop-filter:blur(5px);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
 }
+
 .layui-nav {
-	background-color:rgba(0,0,0,0.2);
-	backdrop-filter:blur(5px);
-	border-radius:10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
 }
+
 .layui-btn-normal {
-	width:40%;
-	background-color:#cc114940;
-	backdrop-filter:blur(5px);
-	border-radius:5px;
+    width: 40%;
+    background-color: #cc114940;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
 }
+
 .layui-btn-warm {
-	width:40%;
-	background-color:#29fa3440;
-	backdrop-filter:blur(5px);
-	border-radius:5px;
+    width: 40%;
+    background-color: #29fa3440;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
 }
+
 input::-webkit-input-placeholder {
-	color:Gainsboro;
+    color: Gainsboro;
 }
+
 input::-moz-placeholder {
-	/* Mozilla Firefox 19+ */
-    color:Gainsboro;
+    /* Mozilla Firefox 19+ */
+    color: Gainsboro;
 }
+
 input:-moz-placeholder {
-	/* Mozilla Firefox 4 to 18 */
-     color:Gainsboro;
+    /* Mozilla Firefox 4 to 18 */
+    color: Gainsboro;
 }
+
 input:-ms-input-placeholder {
-	/* Internet Explorer 10-11 */ 
-    color:Gainsboro;
+    /* Internet Explorer 10-11 */
+    color: Gainsboro;
 }
