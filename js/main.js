@@ -12,12 +12,9 @@ function sub() {
     if (url === "") {
         alert("必填不能为空！");
     }else{
-    var mlurl = window.location.href + "subscribe/&&" + url;
-    if (!!document.getElementById("host").value) {
-        mlurl += "&&" + host;
-    }
+    var mlurl = window.location.href + "subscribe/&&" + url + && + host + &&;
     if (!!document.getElementById("name").value) {
-        mlurl += + name;
+        mlurl += name;
     }
     if (!!document.getElementById("port").value) {
         mlurl += "&&" + port;//多端口筛选
