@@ -1,4 +1,4 @@
-function sub_to_mlsub() {
+function SubToMLSub() {
         document.getElementById("id4").value = sub();
         document.getElementById("id5").value = short();
         Copy();
