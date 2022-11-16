@@ -17,7 +17,7 @@ function sub() {
         mlurl += "&&" + host;
     }
     if (!!document.getElementById("name").value) {
-        mlurl += "&&" + name;
+        mlurl += + name;
     }
     if (!!document.getElementById("port").value) {
         mlurl += "&&" + port;//多端口筛选
