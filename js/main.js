@@ -9,7 +9,7 @@ function Sub() {
     let host = document.getElementById("host").value;
     let name = document.getElementById("name").value;
     let port = document.getElementById("port").value;
-    if (url === "" || host === "") {
+    if (url === "") {
         alert("必填不能为空！");
     } else {
         let mlUrl = window.location.href + "subscribe/&&" + url + "&&" + host + "&&";
