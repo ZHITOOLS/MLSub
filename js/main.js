@@ -13,11 +13,11 @@ function Sub() {
         alert("必填不能为空！");
     } else {
         let mlUrl = window.location.href + "subscribe/&&" + url + "&&" + host + "&&";
-        if (!!document.getElementById("name").value) {
+        if ( if (!!document.getElementById("name").value) ) {
             mlUrl += name;
+        } else {
+        mlUrl += name + "&&" + port;
         }
-        if (!!document.getElementById("port").value) {
-            mlUrl += "&&" + port;
         return mlUrl;
     }
 }
