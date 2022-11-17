@@ -13,13 +13,13 @@ function Sub() {
         alert("必填不能为空！");
     } else {
         let mlUrl = window.location.href + "subscribe/&&" + url + "&&" + host + "&&";
-        if (!!document.getElementById("name").value) {
+    if (!!document.getElementById("name").value) {
         mlurl += name;
     }
-        if (!!document.getElementById("port").value) {
+    if (!!document.getElementById("port").value) {
         mlurl += "&&" + port;//多端口筛选
     }
-        return mlurl;
+    return mlurl;
     }
 }
 
