@@ -13,11 +13,16 @@ function Sub() {
         alert("必填不能为空！");
     } else {
         let mlUrl = window.location.href + "subscribe/&&" + url + "&&" + host + "&&";
+        if (!!document.getElementById("host").value) {
+        mlurl += "&&" + host;
+    }
         if (!!document.getElementById("name").value) {
-            mlUrl += name;
-        } //备注
-        mlUrl += "&&" + port;//多端口筛选
-        return mlUrl;
+        mlurl += "&&" + name;
+    }
+        if (!!document.getElementById("port").value) {
+        mlurl += "&&" + port;//多端口筛选
+    }
+        return mlurl;
     }
 }
 
