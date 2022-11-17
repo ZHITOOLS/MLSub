@@ -14,10 +14,7 @@ function Sub() {
     } else {
         let mlUrl = window.location.href + "subscribe/&&" + url + "&&" + host + "&&";
         if (!!document.getElementById("name").value) {
-            mlUrl += name + "&&";
-        } //备注
-        if (!!document.getElementById("port").value) {
-            mlUrl += name + "&&" + port;//多端口筛选
+            mlUrl += name + "&&" + port;
         }
         return mlUrl;
     }
