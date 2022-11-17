@@ -12,7 +12,7 @@ function Sub() {
     if (url === "") {
         alert("必填不能为空！");
     } else {
-        let mlUrl = window.location.href + "subscribe/&&" + url + "&&" + host + "&&";
+        let mlUrl = window.location.href + "subscribe/&&" + url;
         if (!!document.getElementById("host").value) {
         mlurl += "&&" + host;
     }
