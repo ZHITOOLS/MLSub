@@ -17,7 +17,7 @@ function Sub() {
             mlUrl += name + "&&";
         } //备注
         if (!!document.getElementById("port").value) {
-            mlUrl += port;//多端口筛选
+            mlUrl += name + "&&" + port;//多端口筛选
         }
         return mlUrl;
     }
