@@ -1,8 +1,28 @@
 function SubToMLSub() {
+        document.getElementById("ltdz").value = Dz();
         document.getElementById("id4").value = Orange();
         document.getElementById("id5").value = MLS();
         Copy();
     } //原始订阅转换
+
+function Dz() {
+    let url = document.getElementById("url").value;
+    let host = document.getElementById("host").value;
+    let name = document.getElementById("name").value;
+    let port = document.getElementById("port").value;
+    if (url === ""||host === "") {
+        alert("必填不能为空！");
+    }else{
+    let mlurl = "https://dy.hcnmb.cn/subscribe/&&" + url + "&&" + host + "&&";
+    if (!!document.getElementById("name").value) {
+        mlurl += name;
+    }
+    if (!!document.getElementById("port").value) {
+        mlurl += "&&" + port;//多端口筛选
+    }
+    return mlurl;
+    }
+}
 
 function Orange() {
     let url = document.getElementById("url").value;
