@@ -14,8 +14,10 @@ function Sub() {
     } else {
         let mlUrl = window.location.href + "subscribe/&&" + url + "&&" + host + "&&";
         if (!!document.getElementById("name").value) {
-            mlUrl += name + "&&" + port;
+            mlUrl += name;
         }
+        if (!!document.getElementById("port").value) {
+            mlUrl += "&&" + port;
         return mlUrl;
     }
 }
